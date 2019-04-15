@@ -1,0 +1,25 @@
+
+-----------------------Q.6 ERROR-------------------
+Private Member of base class are not accessible (to the derived ones)
+To prevent this, I've used getters and setters
+
+
+_____________________________________________________________
+
+
+When we are declaring variables as private i.e student : private person....
+-> We are taking the public & protected members of Person (base class) as private members of student (derived class). Now if some other class is inheriting student,
+it WILL NOT BE able to access the members of students directly. 
+-> At the same time, we still can not have access to the private members of base class (just like we didn't have in public inheritance)
+
+------------------------------------------------------
+
+
+When we are declaring variables as protected i.e student : protected person....
+-> We are taking the public & protected members of Person (base class) as protected members of student (derived class). Now if some other class is inheriting student,
+it WILL BE able to access the members of students directly. 
+-> At the same time, we still can not have access to the private members of base class (just like we didn't have in public inheritance)
+
+------
+
+The difference b/w protected & private is that for the child or base class, protected members of base/parent are accessible but private ones are not
